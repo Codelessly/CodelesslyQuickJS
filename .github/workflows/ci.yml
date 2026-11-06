@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.47.7
+          cache: true
+      - run: flutter pub get
+      - run: dart format --set-exit-if-changed --output=none lib test
+      - run: flutter analyze
+      # Builds the library for Linux (tool/build.sh) and tests its C API.
+      - run: flutter test
+      - run: flutter pub publish --dry-run
