@@ -1,4 +1,6 @@
-## Unreleased
+## 1.0.0
+
+First stable release. The API is unchanged from 0.1.0.
 
 **New**
 
