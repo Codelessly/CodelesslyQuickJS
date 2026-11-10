@@ -6,6 +6,10 @@ Linux. It is [QuickJS](https://bellard.org/quickjs/) 2025-04-26 with a small C A
 
 ## Do I need it?
 
+![Script engines by platform: a Web Worker on the web, QuickJS through dart:ffi on Android, iOS, macOS and Linux, none yet on Windows](https://raw.githubusercontent.com/Codelessly/CodelesslySDK/master/docs/guide/images/10-scripting/engines.png)
+
+*Which engine runs scripts where.*
+
 A Codelessly project can include **scripts**: JavaScript that "Run script" actions and formulas run, for logic
 that formulas and actions express badly (validation, calculations, data shaping).
 
