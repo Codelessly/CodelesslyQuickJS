@@ -21,4 +21,6 @@ jobs:
       - run: flutter analyze
       # Builds the library for Linux (tool/build.sh) and tests its C API.
       - run: flutter test
+      # The example runs on the library the tests just built.
+      - run: dart run example/example.dart
       - run: flutter pub publish --dry-run
