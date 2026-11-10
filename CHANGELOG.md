@@ -1,8 +1,12 @@
 ## Unreleased
 
-- A fuller README (when the package is needed, platforms, the C API) and an example that uses the engine through
-  `dart:ffi` (`example/example.dart`). No code changes.
+**New**
+
+- An example, `example/example.dart`, that runs a script through the engine's C API over `dart:ffi`.
 
 ## 0.1.0
 
-- QuickJS 2025-04-26 with the Codelessly C API, for codelessly_sdk scripts.
+**New**
+
+- First release: QuickJS 2025-04-26 with the Codelessly C API. `codelessly_sdk` uses it to run project scripts on
+  Android, iOS, macOS and Linux; add it to apps whose projects use scripts.
